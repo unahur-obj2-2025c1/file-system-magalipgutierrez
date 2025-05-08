@@ -37,8 +37,13 @@ public class Carpeta implements IElemento{
   }
   @Override
   public void mostrar(Integer identacion) {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'mostrar'");
+    // print tmnb existe
+    //println() imprime una sola línea. 
+    System.out.println( nombre + "( "+this.tamanio()+" - Bytes)" );
+    // de todos los elementos que estan dentro de la carpeta por eso dentro del for each
+    listElementos.stream().forEach(e->e.mostrar(identacion +3 ));
+
+
   }
   @Override
   public IElemento archivoMasPesado() {
