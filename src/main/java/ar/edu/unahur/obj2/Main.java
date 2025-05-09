@@ -14,7 +14,7 @@ public class Main {
         Carpeta root = new Carpeta("root");
 
         Archivo file1= new Archivo("jpg", "Dibujo A", 250);
-        Archivo file2= new Archivo("mp3", "Pop", 400);
+        //Archivo file2= new Archivo("mp3", "Pop", 400);
         Archivo file3= new Archivo("jpg", "Rock", 400);
         Archivo file4= new Archivo("mp3", "Audio A", 350);
         Archivo file5= new Archivo("mp4", "Video A", 700);
@@ -30,7 +30,7 @@ public class Main {
         root.agregar(carpeta1);
         root.agregar(carpeta2);
 
-        System.out.println(root);
+        
 
     }
 }

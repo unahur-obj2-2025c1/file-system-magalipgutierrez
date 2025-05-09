@@ -39,7 +39,7 @@ public class Carpeta implements IElemento{
   public void mostrar(Integer identacion) {
     // print tmnb existe
     //println() imprime una sola línea. 
-    System.out.println( nombre + "( "+this.tamanio()+" - Bytes)" );
+    System.out.println( "".repeat(identacion) +" | "+nombre + "( "+this.tamanio()+" - Bytes)" );
     // de todos los elementos que estan dentro de la carpeta por eso dentro del for each
     listElementos.stream().forEach(e->e.mostrar(identacion +3 ));
 

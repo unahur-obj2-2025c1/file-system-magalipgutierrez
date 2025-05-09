@@ -28,8 +28,8 @@ public class Archivo implements IElemento{
 
     @Override
     public void mostrar(Integer identacion) {
-        // usamos la fc nombre-> tipo string
-        System.out.println(this.nombre() ) ;
+        // usamos la fc nombre-> tipo string -> REPEAT()
+        System.out.println("".repeat(identacion) + "|-" + nombre) ;
     }
 
     @Override

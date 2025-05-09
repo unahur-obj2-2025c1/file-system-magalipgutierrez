@@ -7,7 +7,7 @@ import java.util.List;
 // va a ser nuestro cliente-> disparamos las cosas que queremos
 public class FileSystem {
 
-    private List<IElemento> elementos=  new ArrayList<>();
+    private final List<IElemento> elementos=  new ArrayList<>();
 
     public void agregarElemnto(IElemento e){
         elementos.add(e);
